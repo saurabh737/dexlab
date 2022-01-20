@@ -3,15 +3,14 @@ Spring 2022 Project
 
 Team members:
 
-Sanket Bailmare
+Sanket Bailmare - sbailmar@iu.edu
 
-Kumar Saurabh
+Kumar Saurabh - ksaurabh@iu.edu
 
-Shubham Thakur
-
+Shubham Thakur - sdthakur@iu.edu
 
 ToDo List:
 1. Napkin Diagram
-2. Project Introbuction
+2. Project Introduction
 3. Architecture Diagram
-4. Mockups
+4. Mockups (Visual Views)
