@@ -1,0 +1,38 @@
+version: '3.6'
+
+services:
+  #service 1: definition of mysql database
+  mariadbnew:
+    image: "mariadb:10.5.8"
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: nexrad
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root@1234
+      MYSQL_ROOT_PASSWORD: root@1234
+
+  apiservice:
+    image: kausau/nexrad_orm_update
+    restart: always
+    ports:
+      - 8000:8000
+    depends_on:
+      - mariadbnew
+    command: sh -c './wait-for mysql_db:3306 -- npm start'
+
+  pythonservice:
+    image: sbmthakur/ingestor
+    restart: always
+    ports:
+      - 5001:5000
+
+  nodeservice:
+    image: kausau/nexrad_gateway_image
+    restart: always
+    ports:
+      - 3001:3001
+    depends_on:
+      - apiservice
+      - pythonservice
