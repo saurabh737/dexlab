@@ -26,7 +26,7 @@ services:
     image: sbmthakur/ingestor
     restart: always
     ports:
-      - 5001:5000
+      - 5000:5000
 
   nodeservice:
     image: kausau/nexrad_gateway_image3
