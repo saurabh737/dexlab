@@ -9,41 +9,16 @@ Kumar Saurabh - ksaurabh@iu.edu
 
 Shubham Thakur - sdthakur@iu.edu
 
-## Microservices:
+# Homework 1
 
-dexlab is compose of following services:
+The Homework 1 contains the information and deployment instructions for Homework 1:
 
-gateway: Serve client-facing APIs and relay requests to other servies
+https://github.com/airavata-courses/dexlab/wiki/Homework-1
 
-ingestor: Download data from NEXRAD's S3 bucket and generate reflectivity plots
+Deployment:
 
-ORM: Interact with the databse. Other services cannot directly with the database.
+https://github.com/airavata-courses/dexlab/wiki/Homework-1#deployment
 
-## Installation:
-
-### Prerequisites:
-
-`docker` and `docker-compose` must be installed on the system.
-
-### Setup:
-
-Start the services:
-
-```
-$ docker-compose up
-```
-
-## Documentation:
-
-Documentation about the respective services can be found in their respective branches.
-
-OpenAPI compliant API docs are served on the following URL. 
-
-Gateway: http://localhost:3001/apidocs
-
-ORM: http://localhost:8000/swagger-ui.html
-
-Ingestor: http://localhost:5001/apidocs
 
 
 
