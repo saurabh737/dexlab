@@ -9,8 +9,17 @@ Kumar Saurabh - ksaurabh@iu.edu
 
 Shubham Thakur - sdthakur@iu.edu
 
-ToDo List:
-1. Napkin Diagram
-2. Project Introduction
-3. Architecture Diagram
-4. Mockups (Visual Views)
+# Homework 1
+
+The Homework 1 contains the information and deployment instructions for Homework 1:
+
+https://github.com/airavata-courses/dexlab/wiki/Homework-1
+
+Deployment:
+
+https://github.com/airavata-courses/dexlab/wiki/Homework-1#deployment
+
+
+
+
+
